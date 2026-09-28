@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebBaiTap</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        nav { background: #222; padding: 12px 24px; }
+        nav a { color: #fff; margin-right: 20px; text-decoration: none; }
+        main { padding: 24px; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #999; padding: 8px 14px; }
+        th { background: #eee; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+        <a asp-controller="Home" asp-action="Weekend">Câu 1: Cuối tuần</a>
+        <a asp-controller="Product" asp-action="Index">Câu 2: Sản phẩm</a>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>
